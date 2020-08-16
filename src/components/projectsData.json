@@ -1,0 +1,10 @@
+[
+	{ "name": "Trivia Game", "image": "./images/projects/p1.png" },
+	{ "name": "2 Players Chess", "image": "./images/projects/p2.png" },
+	{ "name": "Medium Clone", "image": "./images/projects/p3.png" },
+	{ "name": "Calculator", "image": "./images/projects/p4.png" },
+	{ "name": "Chitrakala", "image": "./images/projects/p5.png" },
+	{ "name": "Sudoku Solver", "image": "./images/projects/p6.png" },
+	{ "name": "Credit Card Input", "image": "./images/projects/p7.png" },
+	{ "name": "Sudoku Solver", "image": "./images/projects/p6.png" }
+]
