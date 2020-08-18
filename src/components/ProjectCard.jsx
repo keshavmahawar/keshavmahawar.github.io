@@ -8,6 +8,8 @@ const StyledProjectCard = Styled.div`
     margin-left:50px;
     .overlay{
         position: absolute;
+        top:0;
+        left:0;
         width:100%;
         height: 100%;
         background: linear-gradient(45deg,#191426,transparent);
@@ -31,7 +33,6 @@ const StyledProjectCard = Styled.div`
             width:30px;
             margin-right:5px;
             margin-top:15px;
-
         }
     }
     .textWrapper::after{
@@ -44,11 +45,12 @@ const StyledProjectCard = Styled.div`
         box-shadow: 0 0 15px 0px black;
         background: white;
     }
-    img {
+    .bgImage {
         width:100%;
+        display: block;
     }
     &: hover{
-        z-index:3;
+        z-index:5;
         transform: scale(1.075);
         box-shadow: 0px 0px 100px 15px black;
         .textWrapper{
@@ -67,19 +69,27 @@ const StyledProjectCard = Styled.div`
         width: 270px;
 
     }
+    @media only screen and (max-width: 1000px) {
+        width: 70%;
+        position: static;
+        margin:  30px 10px 30px 50px;
+    }
 `;
 function ProjectCard(props) {
 	const { name, image } = props.data;
 
 	return (
 		<StyledProjectCard style={props.location}>
-			<div className="overlay">
-            </div>
-			<div className="textWrapper">{name}<br/>
-             <img src="./images/icons/github.svg" alt="github icon"/>
-             <img src="./images/icons/chain.svg" alt="github icon"/>
-            </div>
-			<img src={image} alt={name} />
+			<div style={{position:"relative"}}>
+				<div className="overlay"></div>
+				<div className="textWrapper">
+					{name}
+					<br />
+					<img src="./images/icons/github.svg" alt="github icon" />
+					<img src="./images/icons/chain.svg" alt="github icon" />
+				</div>
+				<img className="bgImage" src={image} alt={name} />
+			</div>
 		</StyledProjectCard>
 	);
 }

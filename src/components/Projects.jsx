@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 const StyledProjects = Styled.div`
     background:linear-gradient(#191426,#0f0d16);
     position: relative;
-    height: 2000px;
+    min-height: 1200px;
     border: 1px solid #00000000;
 `;
 
@@ -19,8 +19,8 @@ function Projects() {
 		{ top: "550px", left: "2%" },
 		{ top: "500px", left: "34%" },
 		{ top: "580px", right: "2%" },
-		{ top: "830px", left: "10%" },
-		{ top: "860px", right: "15%" },
+		{ top: "850px", left: "10%" },
+		{ top: "880px", right: "15%" },
 	];
 	return (
 		<StyledProjects>
@@ -33,37 +33,6 @@ function Projects() {
 					<ProjectCard data={project} location={locations[index]} />
 				))}
 			</RightContainer>
-			{/* <ProjectCard style={}>
-				<div className="overlay"></div>
-
-				<div className="textWrapper">Trivia game</div>
-				<img src="p1.png" />
-			</ProjectCard>
-			<ProjectCard style={}>
-				<div className="overlay"></div>
-				<div className="textWrapper">2 Players chess</div>
-				<img src="p2.png" />
-			</ProjectCard>
-			<ProjectCard style={}>
-				<div className="overlay"></div>
-				<div className="textWrapper">Medium clone</div>
-				<img src="p3.png" />
-			</ProjectCard>
-			<ProjectCard style={}>
-				<div className="overlay"></div>
-				<div className="textWrapper">Medium clone</div>
-				<img src="p3.png" />
-			</ProjectCard>
-			<ProjectCard style={}>
-				<div className="overlay"></div>
-				<div className="textWrapper">Medium clone</div>
-				<img src="p3.png" />
-			</ProjectCard>
-			<ProjectCard style={}>
-				<div className="overlay"></div>
-				<div className="textWrapper">Medium clone</div>
-				<img src="p3.png" />
-			</ProjectCard> */}
 		</StyledProjects>
 	);
 }
