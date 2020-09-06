@@ -1,19 +1,16 @@
 import React from "react";
-import { Line, RightContainer, Heading } from "./StyledComponents";
+import { Line, RightContainer, Heading, I } from "./StyledComponents";
 import Styled from "styled-components";
 const AboutMeText = Styled(RightContainer)`
     color: white;
     line-height: 1.5;
     font-size: 20px;
-    letter-spacing: 0.7px;
+    letter-spacing: 1.5px;
     .blue{
         color:#5918df;
     }
     .yellow{
         color:#eeff31;
-    }
-    .white{
-        color: white;
     }
     .dot{
         color: #3b3553;
@@ -21,12 +18,32 @@ const AboutMeText = Styled(RightContainer)`
     .comment{
         color: #78707e
     }
+    div{display: flex; align-items: center;}
 `;
 const StyledAboutMe = Styled.div`
     position: relative;
     border: 1px solid transparent;
     background-color: #14121c;
 `;
+const Blue = Styled.span`
+     color:#5918df;
+`;
+const Red = Styled.span`
+    color: #e3244c;
+`;
+const LightGreen = Styled.span`
+    color: #24e394;
+`;
+const Green = Styled.span`
+    color: #24e33a;
+`;
+const Orange = Styled.span`
+    color: #e39d24;
+`;
+const Yellow = Styled.span`
+    color: #eeff31;
+`;
+
 function AboutMe() {
 	return (
 		<StyledAboutMe>
@@ -35,62 +52,92 @@ function AboutMe() {
 				<Heading>About</Heading>
 				<div>
 					<span className="blue">class </span>
-					<span className="yellow">KeshavMahawar </span>
-					<span className="white"> {"{"}</span>
+					<span className="yellow"> KeshavMahawar </span>
+					{"{"}
 				</div>
 				<div>
 					<span className="dot">....</span>
-					<span className="comment">// I'm ambitious and love new challenges :)</span>
+					<span className="comment">
+						// I'm ambitious and love new challenges :)
+					</span>
 				</div>
 				<div>
-                    <span className="dot">....</span>
-                    <span className="comment">// My variety of skills is continuously expanding.</span>
-                </div>
+					<span className="dot">....</span>
+					<span className="comment">
+						// My variety of skills is continuously expanding.
+					</span>
+				</div>
 				<div>
-                    <span className="dot">....</span>
-                        constructor
-                        {"() {"}
-                </div>
-				<div><span className="dot">........</span>
-                    this.name 
-                    = 
-                    'Keshav Mahawar'
-                </div>
-				<div>
-                    <span className="dot">........</span>
-                    this.dayOfBirthTimestamp = 602745592</div>
-				<div>
-                    <span className="dot">........</span>
-                    this.email = 'kes.mahawar@gmail.com'</div>
-				<div>
-                    <span className="dot">........</span>
-                    this.phoneNo = +91-7891442004</div>
-				<div>
-                    <span className="dot">....</span>
-                    {"}"}</div>
-				<div>
-                    <span className="dot">....</span>
-                    education() {"{"}</div>
-				<div>
-                    <span className="dot">........</span>
-                    return [</div>
-				<div>
-                    <span className="dot">........</span>
-                    ]</div>
-				<div>
-                    <span className="dot">....</span>
-                    {"}"}</div>
-				<div>
-                    <span className="dot">....</span>
-                    skills() {"{"}</div>
+					<span className="dot">....</span>
+					constructor
+					{"() {"}
+				</div>
 				<div>
 					<span className="dot">........</span>
-                    return [ 'HTML/CSS/JS', 'React', 'Node.js', 'Bootstrap', 'Webpack',
-					'SASS', 'npm', 'GIT' ]
+					<Red>this</Red>.<LightGreen>name</LightGreen>
+					<Red>=</Red>
+					<Green>'Keshav Mahawar'</Green>
 				</div>
 				<div>
-                    <span className="dot">....</span>
-                    {"}"}</div>
+					<span className="dot">........</span>
+					<Red>this</Red>.<LightGreen>dateOfBirthTimestamp</LightGreen>
+					<Red>=</Red>
+					<Orange>926879400000</Orange>
+				</div>
+				<div>
+					<span className="dot">........</span>
+					<Red>this</Red>.<LightGreen>email</LightGreen>
+					<Red>=</Red>
+					<Green>'kes.mahawar@gamil.com'</Green>
+				</div>
+				<div>
+					<span className="dot">........</span>
+					<Red>this</Red>.<LightGreen>phoneNo</LightGreen>
+					<Red>=</Red>
+					<Orange>+91-7891442004</Orange>
+				</div>
+				<div>
+					<span className="dot">....</span>
+					{"}"}
+				</div>
+				<div>
+					<span className="dot">....</span>
+					<Yellow>education</Yellow>()
+					{"{"}
+				</div>
+				<div>
+					<span className="dot">........</span>
+					<Blue>return</Blue>[
+				</div>
+				<div>
+					<span className="dot">........</span>]
+				</div>
+				<div>
+					<span className="dot">....</span>
+					{"}"}
+				</div>
+				<div>
+					<span className="dot">....</span>
+					<Yellow>skills</Yellow>()
+					{"{"}
+				</div>
+				<div>
+					<span className="dot">........</span>
+					<Blue>return</Blue>[
+					<Green>
+						'<I name="html" />HTML' ,
+                        '<I name="css" />CSS',
+                        '<I name="javascript" />JS',
+                        '<I name="react" />	React',
+                        '<I name="node"/>Node.js',
+                        '<I name="bootstrap" />Bootstrap
+					</Green>
+					]
+				</div>
+				<div>
+					<span className="dot">....</span>
+					{"}"}
+				</div>
 				<div>{"}"}</div>
 			</AboutMeText>
 		</StyledAboutMe>

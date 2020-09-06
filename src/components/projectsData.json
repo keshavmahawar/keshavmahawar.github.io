@@ -1,10 +1,42 @@
 [
-	{ "name": "Trivia Game", "image": "./images/projects/p1.png" },
-	{ "name": "2 Players Chess", "image": "./images/projects/p2.png" },
-	{ "name": "Medium Clone", "image": "./images/projects/p3.png" },
-	{ "name": "Calculator", "image": "./images/projects/p4.png" },
-	{ "name": "Chitrakala", "image": "./images/projects/p5.png" },
-	{ "name": "Sudoku Solver", "image": "./images/projects/p6.png" },
-	{ "name": "Credit Card Input", "image": "./images/projects/p7.png" },
-	{ "name": "Sudoku Solver", "image": "./images/projects/p6.png" }
+	{
+		"name": "Trivia Game",
+		"image": "./images/projects/p1.png",
+		"stack": ["html", "css", "javascript"]
+	},
+	{
+		"name": "2 Players Chess",
+		"image": "./images/projects/p2.png",
+		"stack": ["html", "css", "javascript"]
+	},
+	{
+		"name": "Medium Clone",
+		"image": "./images/projects/p3.png",
+		"stack": ["bootstrap", "es6"]
+	},
+	{
+		"name": "Calculator",
+		"image": "./images/projects/p4.png",
+        "stack": ["react", "css"]
+	},
+	{
+		"name": "Chitrakala",
+		"image": "./images/projects/p5.png",
+		"stack": ["react"]
+	},
+	{
+		"name": "Sudoku Solver",
+		"image": "./images/projects/p6.png",
+		"stack": ["es6"]
+	},
+	{
+		"name": "Credit Card Input",
+		"image": "./images/projects/p7.png",
+		"stack": ["react"]
+	},
+	{
+		"name": "Simba Webpage",
+		"image": "./images/projects/p8.png",
+		"stack": ["html", "css"]
+	}
 ]

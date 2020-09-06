@@ -1,4 +1,5 @@
 import Styled from 'styled-components';
+import React from 'react'
 export const Line = Styled.div`
     position: absolute;
     left: 10%;
@@ -33,3 +34,13 @@ export const Heading = Styled.div`
         content:"/>";
     }
 `;
+
+export const Icon = Styled.img`
+    height: 40px;
+    margin: 0 10px;
+`;
+
+export function I(props){
+    let {name} = props
+    return <Icon src={`./images/icons/${name}.svg`} />
+}
