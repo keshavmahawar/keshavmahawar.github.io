@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
-import {Line, RightContainer, Heading} from './StyledComponents';
+import { Line, RightContainer, Heading } from "./StyledComponents";
 
 const StyledIntro = Styled.div`
     background-color: #0f0d16;
@@ -30,19 +30,23 @@ const IntroPara = Styled(RightContainer)`
         min-width: 200px;
         max-width: 400px;
         box-shadow: 0px 0px 30px 0px #5918df88,0px 0px 30px 0px #5918df88 inset;
-        transition: transform .2s;
         animation-duration: 2s;
         animation-name: slideIn;
+        transition: box-shadow .2s;
         overflow: hidden;
     }
     .profileImg img {
         width:100%;
         animation-duration: 2.5s;
         animation-name: slideUp;
-        transform: translateY(5%);
+        transition: transform .2s;
+        transform: translateY(10%)
+    }
+    .profileImg:hover img{
+        transform: translateY(5%) scale(1.1);
     }
     .profileImg:hover{
-        transform: translateY(-5%) scale(1.1);
+        box-shadow: 0px 0px 40px 0px #5918df88;
     }
     @keyframes slideIn {
         from {
@@ -62,7 +66,7 @@ const IntroPara = Styled(RightContainer)`
         }
 
         to {
-            transform: translateY(5%);
+            transform: translateY(10%);
             opacity: 1;
         }
     }  
@@ -85,30 +89,28 @@ const SecondaryLine = Styled.div`
 `;
 
 function Intro() {
-	return (
+    return (
         <>
-		<StyledIntro>
-			<Line>
-			</Line>
-			<IntroPara>
-                <div>
-
-                    <Heading>Start</Heading>
-                    <IntroText>
-                        Hi, my name is <span className="name">Keshav Mahawar</span>
-                        <br />i am a fullstack developer
-                        <br />i love to bring ideas come true through code
-                    </IntroText>
-                    <SecondaryLine>Let me show you....</SecondaryLine>
-                </div>
-                <div className="profileImg">
-			        <img  src="./keshav.png" alt="keshav mahawar" />
-                </div>
-			</IntroPara>
-		</StyledIntro>
-       
+            <StyledIntro id="start">
+                <Line></Line>
+                <IntroPara>
+                    <div>
+                        <Heading>Start</Heading>
+                        <IntroText>
+                            Hi, my name is{" "}
+                            <span className="name">Keshav Mahawar</span>
+                            <br />i am a fullstack developer
+                            <br />i love to bring ideas come true through code
+                        </IntroText>
+                        <SecondaryLine>Let me show you....</SecondaryLine>
+                    </div>
+                    <div className="profileImg">
+                        <img src="./keshav.png" alt="keshav mahawar" />
+                    </div>
+                </IntroPara>
+            </StyledIntro>
         </>
-	);
+    );
 }
 
 export default Intro;

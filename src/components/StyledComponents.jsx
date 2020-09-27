@@ -1,5 +1,5 @@
-import Styled from 'styled-components';
-import React from 'react'
+import Styled from "styled-components";
+import React from "react";
 export const Line = Styled.div`
     position: absolute;
     left: 10%;
@@ -11,7 +11,7 @@ export const Line = Styled.div`
 export const RightContainer = Styled.div`
     margin-left: calc(10% + 20px);
     margin-right: 10%;
-`
+`;
 export const Heading = Styled.div`
     color: #988e9f;
     font-weight: 300;
@@ -40,7 +40,7 @@ export const Icon = Styled.img`
     margin: 0 10px;
 `;
 
-export function I(props){
-    let {name} = props
-    return <Icon src={`./images/icons/${name}.svg`} />
+export function I(props) {
+    let { name } = props;
+    return <Icon src={`./images/icons/${name}.svg`} />;
 }

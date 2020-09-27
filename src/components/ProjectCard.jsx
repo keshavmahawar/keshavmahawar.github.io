@@ -26,7 +26,7 @@ const StyledProjectCard = Styled.div`
         /* border: 1px solid white; */
         left: -50px;
         width: 150px;
-        font-size: 32px;
+        font-size: 25px;
         font-weight:700;
         /* padding-bottom:10px; */
         color: white;

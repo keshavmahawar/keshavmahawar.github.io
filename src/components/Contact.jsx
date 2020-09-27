@@ -1,5 +1,5 @@
 import React from "react";
-import { Line, RightContainer, Heading} from "./StyledComponents";
+import { Line, RightContainer, Heading } from "./StyledComponents";
 import Styled from "styled-components";
 
 const StyledContact = Styled.div`
@@ -22,10 +22,11 @@ const StyledFindMe = Styled(RightContainer)`
             width: 800px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            color: #5918df;
             font-size: 30px;
-            div{
+            div a{
+                color: #5918df;
                 display: flex;
+                text-decoration: none;
                 align-items: center;
             }
         }
@@ -38,39 +39,61 @@ const Icon = Styled.img`
 `;
 
 function Contact() {
-	return (
-		<StyledContact>
-			<Line />
-			<StyledFindMe>
-				<Heading>Contact</Heading>
-				<div className="container">
-					<div className="heading">Find me on :</div>
-					<div className="contactGrid">
-						<div>
-							<Icon src="./images/icons/linkedin.svg" />
-							Linked in
-						</div>
-						<div>
-							<Icon src="./images/icons/github.svg" />
-							Github
-						</div>
-						<div>
-							<Icon src="./images/icons/twitter.svg" />
-							Twitter
-						</div>
-						<div>
-							<Icon src="./images/icons/medium.svg" />
-							Medium
-						</div>
-						<div>
-							<Icon src="./images/icons/gmail.svg" />
-							kes.mahawar@gmail.com
-						</div>
-					</div>
-				</div>
-			</StyledFindMe>
-		</StyledContact>
-	);
+    return (
+        <StyledContact id="contact">
+            <Line />
+            <StyledFindMe>
+                <Heading>Contact</Heading>
+                <div className="container">
+                    <div className="heading">Find me on :</div>
+                    <div className="contactGrid">
+                        <div>
+                            <a
+                                href="https://www.linkedin.com/in/keshav-m-191a8b131/"
+                                target="_blank"
+                            >
+                                <Icon src="./images/icons/linkedin.svg" />
+                                Linked in
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://github.com/keshavmahawar"
+                                target="_blank"
+                            >
+                                <Icon src="./images/icons/github.svg" />
+                                Github
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <Icon src="./images/icons/gmail.svg" />
+                                kes.mahawar@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://twitter.com/kesmahawar"
+                                target="_blank"
+                            >
+                                <Icon src="./images/icons/twitter.svg" />
+                                Twitter
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://medium.com/@kesmahawar"
+                                target="_blank"
+                            >
+                                <Icon src="./images/icons/medium.svg" />
+                                Medium
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </StyledFindMe>
+        </StyledContact>
+    );
 }
 
 export default Contact;

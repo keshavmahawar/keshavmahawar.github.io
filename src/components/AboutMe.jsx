@@ -45,103 +45,120 @@ const Yellow = Styled.span`
 `;
 
 function AboutMe() {
-	return (
-		<StyledAboutMe>
-			<Line></Line>
-			<AboutMeText>
-				<Heading>About</Heading>
-				<div>
-					<span className="blue">class </span>
-					<span className="yellow"> KeshavMahawar </span>
-					{"{"}
-				</div>
-				<div>
-					<span className="dot">....</span>
-					<span className="comment">
-						// I'm ambitious and love new challenges :)
-					</span>
-				</div>
-				<div>
-					<span className="dot">....</span>
-					<span className="comment">
-						// My variety of skills is continuously expanding.
-					</span>
-				</div>
-				<div>
-					<span className="dot">....</span>
-					constructor
-					{"() {"}
-				</div>
-				<div>
-					<span className="dot">........</span>
-					<Red>this</Red>.<LightGreen>name</LightGreen>
-					<Red>=</Red>
-					<Green>'Keshav Mahawar'</Green>
-				</div>
-				<div>
-					<span className="dot">........</span>
-					<Red>this</Red>.<LightGreen>dateOfBirthTimestamp</LightGreen>
-					<Red>=</Red>
-					<Orange>926879400000</Orange>
-				</div>
-				<div>
-					<span className="dot">........</span>
-					<Red>this</Red>.<LightGreen>email</LightGreen>
-					<Red>=</Red>
-					<Green>'kes.mahawar@gamil.com'</Green>
-				</div>
-				<div>
-					<span className="dot">........</span>
-					<Red>this</Red>.<LightGreen>phoneNo</LightGreen>
-					<Red>=</Red>
-					<Orange>+91-7891442004</Orange>
-				</div>
-				<div>
-					<span className="dot">....</span>
-					{"}"}
-				</div>
-				<div>
-					<span className="dot">....</span>
-					<Yellow>education</Yellow>()
-					{"{"}
-				</div>
-				<div>
-					<span className="dot">........</span>
-					<Blue>return</Blue>[
-				</div>
-				<div>
-					<span className="dot">........</span>]
-				</div>
-				<div>
-					<span className="dot">....</span>
-					{"}"}
-				</div>
-				<div>
-					<span className="dot">....</span>
-					<Yellow>skills</Yellow>()
-					{"{"}
-				</div>
-				<div>
-					<span className="dot">........</span>
-					<Blue>return</Blue>[
-					<Green>
-						'<I name="html" />HTML' ,
-                        '<I name="css" />CSS',
-                        '<I name="javascript" />JS',
-                        '<I name="react" />	React',
-                        '<I name="node"/>Node.js',
-                        '<I name="bootstrap" />Bootstrap
-					</Green>
-					]
-				</div>
-				<div>
-					<span className="dot">....</span>
-					{"}"}
-				</div>
-				<div>{"}"}</div>
-			</AboutMeText>
-		</StyledAboutMe>
-	);
+    return (
+        <StyledAboutMe id="about">
+            <Line></Line>
+            <AboutMeText>
+                <Heading>About</Heading>
+                <div>
+                    <span className="blue">class&nbsp;</span>
+                    <span className="yellow">KeshavMahawar </span>
+                    {"{"}
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    <span className="comment">
+                        // I'm ambitious and love new challenges :)
+                    </span>
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    <span className="comment">
+                        // My variety of skills is continuously expanding.
+                    </span>
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    <Yellow>constructor</Yellow>
+                    {"() {"}
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Red>this</Red>.<LightGreen>name</LightGreen>
+                    <Red>&nbsp;=&nbsp; </Red>
+                    <Green>'Keshav Mahawar'</Green>
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Red>this</Red>.
+                    <LightGreen>dateOfBirthTimestamp</LightGreen>
+                    <Red>&nbsp;=&nbsp;</Red>
+                    <Orange>926879400000</Orange>
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Red>this</Red>.<LightGreen>email</LightGreen>
+                    <Red>&nbsp;=&nbsp; </Red>
+                    <Green>'kes.mahawar@gamil.com'</Green>
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Red>this</Red>.<LightGreen>phoneNo</LightGreen>
+                    <Red>&nbsp;=&nbsp;</Red>
+                    <Orange>+91-7891442004</Orange>
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    {"}"}
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    <Yellow>education</Yellow>()
+                    {" {"}
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Blue>return</Blue>[
+                </div>
+                <div>
+                    <span className="dot">........</span>]
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    {"}"}
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    <Yellow>skills</Yellow>()
+                    {" {"}
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Blue>return</Blue>[
+                    <Green>
+                        '<I name="html" />
+                        HTML' , '<I name="css" />
+                        CSS', '<I name="javascript" />
+                        JS', '<I name="react" /> React','
+                        <I name="redux" /> Redux', '<I name="node" />
+                        Node.js', '<I name="bootstrap" />
+                        Bootstrap'
+                    </Green>
+                    ]
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    <Yellow>tools</Yellow>()
+                    {" {"}
+                </div>
+                <div>
+                    <span className="dot">........</span>
+                    <Blue>return</Blue>[
+                    <Green>
+                        '<I name="git" />
+                        Git' , '<I name="npm" />
+                        Npm'
+                    </Green>
+                    ]
+                </div>
+                <div>
+                    <span className="dot">....</span>
+                    {"}"}
+                </div>
+                <div>{"}"}</div>
+            </AboutMeText>
+        </StyledAboutMe>
+    );
 }
 
 export default AboutMe;

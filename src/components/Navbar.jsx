@@ -1,18 +1,29 @@
-import React from 'react';
-import Styled from 'styled-components'
+import React from "react";
+import Styled from "styled-components";
 
 const StyledNavbar = Styled.div`
    position: fixed;
     top:0;
-    width: 100%;
-    height:20px;
+    width: 90%;
+    /* height:20px; */
     display: flex;
-    /* padding:10px 20px; */
-    z-index:3;
-    /* background-color: red; */
+    padding:0 5%;
+    align-items: baseline;
+    z-index:7;
     background:linear-gradient(#0f0d16,transparent);
+    /* border: 1px solid white; */
     .left{
         flex:1;
+        .heading{
+            color:white;
+            font-weight:bold;
+            font-size:45px;
+            margin: 5px 0;
+        }
+    }
+    a{
+        text-decoration:none;
+        color: white;
     }
     .right{
         display: flex;
@@ -34,23 +45,30 @@ const StyledNavbar = Styled.div`
         }
     } 
 
-`
-
+`;
 
 function Navbar() {
-  return (
-    <StyledNavbar>
-        <div className="left">
-
-        </div>
-        <div className="right">
-            <div>Start</div>
-            <div>Projects</div>
-            <div>About</div>
-            <div>Contact</div>
-        </div>
-    </StyledNavbar>
-  );
+    return (
+        <StyledNavbar>
+            <div className="left">
+                <div className="heading">&lt; Keshav /&gt;</div>
+            </div>
+            <div className="right">
+                <div>
+                    <a href="#start">Start</a>
+                </div>
+                <div>
+                    <a href="#projects">Projects</a>
+                </div>
+                <div>
+                    <a href="#about">About</a>
+                </div>
+                <div>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </StyledNavbar>
+    );
 }
 
 export default Navbar;

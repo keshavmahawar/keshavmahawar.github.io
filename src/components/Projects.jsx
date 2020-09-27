@@ -12,29 +12,33 @@ const StyledProjects = Styled.div`
 `;
 
 function Projects() {
-	let locations = [
-		{ top: "100px", left: "2%" },
-		{ top: "220px", left: "34%" },
-		{ top: "180px", right: "4%" },
-		{ top: "550px", left: "2%" },
-		{ top: "500px", left: "34%" },
-		{ top: "580px", right: "4%" },
-		{ top: "850px", left: "10%" },
-		{ top: "880px", right: "15%" },
-	];
-	return (
-		<StyledProjects>
-			<Line></Line>
-			<RightContainer>
-				<Heading>Projects</Heading>
-			</RightContainer>
-			<RightContainer>
-				{projectData?.map((project, index) => (
-					<ProjectCard data={project} location={locations[index]} key={project.name} />
-				))}
-			</RightContainer>
-		</StyledProjects>
-	);
+    let locations = [
+        { top: "100px", left: "2%" },
+        { top: "220px", left: "34%" },
+        { top: "180px", right: "4%" },
+        { top: "550px", left: "2%" },
+        { top: "500px", left: "34%" },
+        { top: "580px", right: "4%" },
+        { top: "850px", left: "10%" },
+        { top: "880px", right: "15%" },
+    ];
+    return (
+        <StyledProjects id="projects">
+            <Line></Line>
+            <RightContainer>
+                <Heading>Projects</Heading>
+            </RightContainer>
+            <RightContainer>
+                {projectData?.map((project, index) => (
+                    <ProjectCard
+                        data={project}
+                        location={locations[index]}
+                        key={project.name}
+                    />
+                ))}
+            </RightContainer>
+        </StyledProjects>
+    );
 }
 
 export default Projects;
