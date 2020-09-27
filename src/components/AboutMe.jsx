@@ -18,7 +18,18 @@ const AboutMeText = Styled(RightContainer)`
     .comment{
         color: #78707e
     }
-    div{display: flex; align-items: center;}
+    @media only screen and (max-width: 900px) {
+        .dot{
+            display: none;
+        }
+        font-size: 18px;
+
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 `;
 const StyledAboutMe = Styled.div`
     position: relative;

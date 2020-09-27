@@ -2,24 +2,27 @@ import React from "react";
 import Styled from "styled-components";
 
 const StyledNavbar = Styled.div`
-   position: fixed;
+    position: fixed;
     top:0;
     width: 90%;
-    /* height:20px; */
     display: flex;
     padding:0 5%;
     align-items: baseline;
-    z-index:7;
+    z-index:3;
     background:linear-gradient(#0f0d16,transparent);
-    /* border: 1px solid white; */
+    transition: all 1s;
+    transform: translateY(${(props) => (props.hidden ? "-100%" : "0%")});
+
     .left{
         flex:1;
         .heading{
-            color:white;
-            font-weight:bold;
-            font-size:45px;
+            color: white;
+            font-weight: bold;
+            font-size: 2.1rem;
             margin: 5px 0;
         }
+        
+
     }
     a{
         text-decoration:none;
@@ -43,13 +46,27 @@ const StyledNavbar = Styled.div`
             color: #494949;
 
         }
-    } 
+    }
+    @media only screen and (max-width: 600px) {
+        .right div{
+            font-size:19px;
+        }
+        .right div::after{
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        .heading{
+            display:none;
+        }        
+    }
 
 `;
 
-function Navbar() {
+function Navbar(props) {
+    console.log("render");
     return (
-        <StyledNavbar>
+        <StyledNavbar hidden={props.hidden}>
             <div className="left">
                 <div className="heading">&lt; Keshav /&gt;</div>
             </div>

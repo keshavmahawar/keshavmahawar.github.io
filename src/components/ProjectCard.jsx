@@ -70,7 +70,7 @@ const StyledProjectCard = Styled.div`
 
     }
     &: hover{
-        z-index:5;
+        z-index:2;
         transform: scale(1.075);
         box-shadow: 0px 0px 100px 15px black;
         
@@ -116,32 +116,32 @@ const Icon = Styled.img`
 `;
 
 export function I(props) {
-	let { name } = props;
-	return <Icon src={`./images/icons/${name}.svg`} />;
+    let { name } = props;
+    return <Icon src={`./images/icons/${name}.svg`} />;
 }
 
 function ProjectCard(props) {
-	const { name, image, stack } = props.data;
+    const { name, image, stack } = props.data;
 
-	return (
-		<StyledProjectCard style={props.location}>
-			<div style={{ position: "relative" }}>
-				<div className="overlay"></div>
-				<div className="textWrapper">
-					{name}
-					<br />
-					<img src="./images/icons/github.svg" alt="github icon" />
-					<img src="./images/icons/chain.svg" alt="icon" />
-				</div>
-				<div className="techStack">
-					{stack.map((name) => (
-						<I key={name} name={name} />
-					))}
-				</div>
-				<img className="bgImage" src={image} alt={name} />
-			</div>
-		</StyledProjectCard>
-	);
+    return (
+        <StyledProjectCard style={props.location}>
+            <div style={{ position: "relative" }}>
+                <div className="overlay"></div>
+                <div className="textWrapper">
+                    {name}
+                    <br />
+                    <img src="./images/icons/github.svg" alt="github icon" />
+                    <img src="./images/icons/chain.svg" alt="icon" />
+                </div>
+                <div className="techStack">
+                    {stack.map((name) => (
+                        <I key={name} name={name} />
+                    ))}
+                </div>
+                <img className="bgImage" src={image} alt={name} />
+            </div>
+        </StyledProjectCard>
+    );
 }
 
 export default ProjectCard;

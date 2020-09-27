@@ -72,20 +72,25 @@ const IntroPara = Styled(RightContainer)`
     }  
 `;
 const IntroText = Styled.div`
-    font-size: 34px;
     font-weight: 900;
     line-height: 1.5;
     .name{
         color: #5918df;
     }
-    
+    font-size: 2vw;
+    @media only screen and (max-width: 900px) {
+        font-size: 4.5vw;
+    }
 `;
 
 const SecondaryLine = Styled.div`
     color: #988e9f;
     font-weight: 500;
     margin:10px 0;
-    font-size: 30px;
+    font-size: 1.6vw;
+    @media only screen and (max-width: 900px) {
+        font-size: 4vw;
+    }
 `;
 
 function Intro() {

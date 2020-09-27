@@ -29,6 +29,16 @@ const StyledFindMe = Styled(RightContainer)`
                 text-decoration: none;
                 align-items: center;
             }
+            
+            @media only screen and (max-width: 1000px) {
+                grid-template-columns: 1fr 1fr;
+                font-size: 35px;
+            }
+
+            @media only screen and (max-width: 650px) {
+                grid-template-columns: 1fr;
+                font-size: 30px;
+            }
         }
     }
 `;
