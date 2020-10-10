@@ -46,7 +46,12 @@ const LightGreen = Styled.span`
     color: #24e394;
 `;
 const Green = Styled.span`
+    display:flex;
     color: #24e33a;
+    flex-wrap: wrap;
+    &:div{
+       display:flex; 
+    }
 `;
 const Orange = Styled.span`
     color: #e39d24;
@@ -112,7 +117,7 @@ function AboutMe() {
                     <span className="dot">....</span>
                     {"}"}
                 </div>
-                <div>
+                {/* <div>
                     <span className="dot">....</span>
                     <Yellow>education</Yellow>()
                     {" {"}
@@ -127,7 +132,7 @@ function AboutMe() {
                 <div>
                     <span className="dot">....</span>
                     {"}"}
-                </div>
+                </div> */}
                 <div>
                     <span className="dot">....</span>
                     <Yellow>skills</Yellow>()
@@ -137,13 +142,26 @@ function AboutMe() {
                     <span className="dot">........</span>
                     <Blue>return</Blue>[
                     <Green>
-                        '<I name="html" />
-                        HTML' , '<I name="css" />
-                        CSS', '<I name="javascript" />
-                        JS', '<I name="react" /> React','
-                        <I name="redux" /> Redux', '<I name="node" />
-                        Node.js', '<I name="bootstrap" />
-                        Bootstrap'
+                        <div>
+                            '<I name="html" /> HTML',
+                        </div>
+                        <div>
+                            '<I name="css" />
+                            CSS',
+                        </div>
+                        <div>
+                            '<I name="javascript" /> JS',
+                        </div>
+                        '<I name="react" /> React',
+                        <div>
+                            '<I name="redux" /> Redux',
+                        </div>
+                        <div>
+                            '<I name="node" /> Node.js',
+                        </div>
+                        <div>
+                            '<I name="bootstrap" /> Bootstrap'
+                        </div>
                     </Green>
                     ]
                 </div>
@@ -156,9 +174,12 @@ function AboutMe() {
                     <span className="dot">........</span>
                     <Blue>return</Blue>[
                     <Green>
-                        '<I name="git" />
-                        Git' , '<I name="npm" />
-                        Npm'
+                        <div>
+                            '<I name="git" /> Git' ,
+                        </div>
+                        <div>
+                            '<I name="npm" /> Npm'
+                        </div>
                     </Green>
                     ]
                 </div>

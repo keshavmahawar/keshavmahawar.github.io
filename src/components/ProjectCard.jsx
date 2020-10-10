@@ -121,7 +121,7 @@ export function I(props) {
 }
 
 function ProjectCard(props) {
-    const { name, image, stack } = props.data;
+    const { name, image, stack, gitHubLink, liveLink } = props.data;
 
     return (
         <StyledProjectCard style={props.location}>
@@ -130,8 +130,19 @@ function ProjectCard(props) {
                 <div className="textWrapper">
                     {name}
                     <br />
-                    <img src="./images/icons/github.svg" alt="github icon" />
-                    <img src="./images/icons/chain.svg" alt="icon" />
+                    {gitHubLink && (
+                        <a href={gitHubLink} target="_blank">
+                            <img
+                                src="./images/icons/github.svg"
+                                alt="github icon"
+                            />
+                        </a>
+                    )}
+                    {liveLink && (
+                        <a href={liveLink} target="_blank">
+                            <img src="./images/icons/chain.svg" alt="icon" />
+                        </a>
+                    )}
                 </div>
                 <div className="techStack">
                     {stack.map((name) => (
