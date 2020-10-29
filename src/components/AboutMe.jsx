@@ -157,10 +157,18 @@ function AboutMe() {
                             '<I name="redux" /> Redux',
                         </div>
                         <div>
+                            '<I name="bootstrap" /> Bootstrap'
+                        </div>
+                        <div>
                             '<I name="node" /> Node.js',
                         </div>
                         <div>
-                            '<I name="bootstrap" /> Bootstrap'
+                            '<I name="express" />
+                            express',
+                        </div>
+                        <div>
+                            '<I name="mongodb" />
+                            ',
                         </div>
                     </Green>
                     ]

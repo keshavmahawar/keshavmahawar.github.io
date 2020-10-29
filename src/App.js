@@ -5,7 +5,6 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import { render } from "@testing-library/react";
 
 class App extends React.Component {
     constructor(props) {

@@ -1,6 +1,5 @@
 import React from "react";
 import Styled from "styled-components";
-import { Icon as StyledIcon } from "./StyledComponents";
 
 const StyledProjectCard = Styled.div`
     width: 400px;
@@ -131,7 +130,11 @@ function ProjectCard(props) {
                     {name}
                     <br />
                     {gitHubLink && (
-                        <a href={gitHubLink} target="_blank">
+                        <a
+                            href={gitHubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <img
                                 src="./images/icons/github.svg"
                                 alt="github icon"
@@ -139,7 +142,11 @@ function ProjectCard(props) {
                         </a>
                     )}
                     {liveLink && (
-                        <a href={liveLink} target="_blank">
+                        <a
+                            href={liveLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <img src="./images/icons/chain.svg" alt="icon" />
                         </a>
                     )}

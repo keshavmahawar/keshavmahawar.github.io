@@ -24,7 +24,7 @@ const StyledFindMe = Styled(RightContainer)`
             grid-template-columns: 1fr 1fr 1fr;
             font-size: 30px;
             div a{
-                color: #5918df;
+                color: white;
                 display: flex;
                 text-decoration: none;
                 align-items: center;
@@ -61,6 +61,7 @@ function Contact() {
                             <a
                                 href="https://www.linkedin.com/in/keshav-m-191a8b131/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Icon src="./images/icons/linkedin.svg" />
                                 Linked in
@@ -70,13 +71,17 @@ function Contact() {
                             <a
                                 href="https://github.com/keshavmahawar"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Icon src="./images/icons/github.svg" />
                                 Github
                             </a>
                         </div>
                         <div>
-                            <a href="#">
+                            <a
+                                href="mailto:kes.mahawar@gmail.com"
+                                rel="noopener noreferrer"
+                            >
                                 <Icon src="./images/icons/gmail.svg" />
                                 kes.mahawar@gmail.com
                             </a>
@@ -85,6 +90,7 @@ function Contact() {
                             <a
                                 href="https://twitter.com/kesmahawar"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Icon src="./images/icons/twitter.svg" />
                                 Twitter
@@ -94,6 +100,7 @@ function Contact() {
                             <a
                                 href="https://medium.com/@kesmahawar"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Icon src="./images/icons/medium.svg" />
                                 Medium
