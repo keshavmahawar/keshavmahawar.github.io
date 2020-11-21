@@ -120,7 +120,7 @@ export function I(props) {
 }
 
 function ProjectCard(props) {
-    const { name, image, stack, gitHubLink, liveLink } = props.data;
+    const { name, image, stack, gitHubLink, liveLink, videoLink } = props.data;
 
     return (
         <StyledProjectCard style={props.location}>
@@ -147,7 +147,19 @@ function ProjectCard(props) {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <img src="./images/icons/chain.svg" alt="icon" />
+                            <img
+                                src="./images/icons/chain.svg"
+                                alt="liveIcon"
+                            />
+                        </a>
+                    )}
+                    {videoLink && (
+                        <a
+                            href={videoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src="./images/icons/play.png" alt="playIcon" />
                         </a>
                     )}
                 </div>
